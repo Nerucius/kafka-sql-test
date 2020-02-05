@@ -1,2 +1,9 @@
+const express = require("express");
+const app = express();
+const port = 80;
 
-console.log("web here")
+app.get("/", (request, response) => {
+  response.send("Hello World!");
+});
+
+app.listen(port);
